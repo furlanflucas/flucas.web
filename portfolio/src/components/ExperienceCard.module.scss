@@ -1,0 +1,44 @@
+.experience-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .experience-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--primary-color);
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .experience-text-company {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+  }
+  
+  .experience-text-role {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+  }
+  
+  .experience-text-date {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+  }
+  
+  .experience-text-desc {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.5;
+  }
+  

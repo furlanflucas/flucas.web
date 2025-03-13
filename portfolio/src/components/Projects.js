@@ -3,9 +3,9 @@ import styles from "./Projects.module.scss";
 import { motion } from "framer-motion";
 
 const projects = [
-  { title: "Fraud Detection System", link: "https://github.com/furlanflucas/fraud-detection" },
-  { title: "Looker Dashboards", link: "https://github.com/furlanflucas" },
-  { title: "Real-Time Data Pipeline", link: "https://github.com/furlanflucas" }
+  { title: "Geospatial Data Quality Pipeline", link: "https://github.com/furlanflucas/flucas.io/tree/main/data_engineering/geospatial_data_quality_pipeline" },
+  { title: "Cloud Data Warehouse for Music Analytics", link: "https://github.com/furlanflucas/flucas.io/tree/main/data_engineering/cloud_data_warehouse_for_music_analytics" },
+  { title: "Real-Time Data Pipeline", link: "https://github.com/furlanflucas/flucas.io/tree/main/data_engineering/real_time_fraud_detections" }
 ];
 
 const Projects = () => {

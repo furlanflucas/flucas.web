@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
-  background: #102749;
+  background: #212327;
   backdrop-filter: blur(10px);
   border-bottom: 2px solid var(--secondary-color);
   z-index: 1000;
@@ -16,7 +16,7 @@
   font-size: 30px;
   font-weight: bold;
   color: var(--secondary-color);
-  font-family: 'Sixtyfour', sans-serif;
+  font-family: 'mono';
   margin-left: 10px; /* Moves it closer to the left */
 }
 .navLinks {
