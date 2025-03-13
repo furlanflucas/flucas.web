@@ -1,0 +1,20 @@
+.about {
+    padding: 80px 50px; /* Increase left padding */
+    background-color: var(--primary-color);
+    text-align: left; /* Align text to the left */
+    max-width: 1000px; /* Limit width to keep content readable */
+    margin: 0 auto; /* Center it horizontally */
+}
+.about h2 {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 10px; /* Add spacing */
+}
+
+.about p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    text-align: left; /* Ensure paragraph is also aligned */
+}

@@ -1,0 +1,29 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #102749;
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid var(--secondary-color);
+  z-index: 1000;
+}
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--secondary-color);
+  font-family: 'Sixtyfour', sans-serif;
+  margin-left: 10px; /* Moves it closer to the left */
+}
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 10px; /* Increase spacing for better balance */
+  margin: 0 auto; /* Centers the links */
+  padding-right: 0px; /* Pushes the links slightly left */
+}
+
