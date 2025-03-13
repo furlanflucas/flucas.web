@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <>
       <nav className={styles.navbar}>
-        <div className={styles.logo}>FLUCAS.IO</div>
+      <div className={styles.logo}>FLUCAS.io</div>
         <ul className={styles.navLinks}>
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>

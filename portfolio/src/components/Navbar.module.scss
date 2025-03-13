@@ -6,26 +6,40 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 1px;
-  background: #212327;
+  padding: 10px 10px;
+  background: #0B0C10;
   backdrop-filter: blur(10px);
   border-bottom: 2px solid var(--secondary-color);
   z-index: 1000;
 }
 .logo {
-  font-size: 30px;
-  font-weight: bold;
-  color: var(--secondary-color);
-  font-family: 'mono';
-  margin-left: 30px; /* Increase left margin */
+  font-size: 30px; /* Adjust size if needed */
+  font-style: italic; /* Makes the text italic */
+  font-weight: 300; /* Optional: Adjust boldness */
+  color: #66FcF1;
+  font-family: 'Roboto', sans-serif; /* Apply Roboto font */
 }
 
 .navLinks {
   list-style: none;
   display: flex;
-  gap: 20px; /* Adjust spacing between links */
+  gap: 10px; /* Adjust spacing between links */
   margin-left: auto; /* Pushes nav links to the right */
-  padding-right: 10px; /* Adds 5px spacing at the end */
+  padding-right: 10px; /* Adds spacing at the end */
+}
+
+.navLinks a {
+  font-family: 'Roboto', sans-serif; /* Same font as FLUCAS.io */
+  font-style: normal; /* Ensures text is NOT italic */
+  font-weight: 400; /* Regular weight */
+  font-size: 20px; /* Adjust for readability */
+  color: #66FcF1; /* Uses global text color */
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.navLinks a:hover {
+  color: #ffffff; /* Changes color on hover */
 }
 
 .navLinks li:last-child {

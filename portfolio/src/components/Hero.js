@@ -24,7 +24,7 @@ const Hero = () => {
             className={styles.heroText}
           >
             Hi, I'm <span className={styles.highlight}>Lucas Furlan</span> 
-            <span className={styles.waveEmoji}>{emoji("👋")}</span>
+            <span className={styles.waveEmoji}>{emoji()}</span>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0 }} 
