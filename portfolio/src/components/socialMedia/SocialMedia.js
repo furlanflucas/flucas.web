@@ -1,17 +1,29 @@
 import React from "react";
+import styles from "./SocialMedia.module.scss";
 
 const SocialMedia = () => {
   return (
-    <div>
-      <a href="https://github.com/furlanflucas" target="_blank" rel="noopener noreferrer">
-        GitHub
-      </a>
-      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+    <div className={styles.socialContainer}>
+      <a 
+        href="https://www.linkedin.com/in/furlanflucas/" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className={styles.socialButton}
+      >
         LinkedIn
+      </a>
+      <a 
+        href="https://github.com/furlanflucas" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className={styles.socialButton}
+      >
+        GitHub
       </a>
     </div>
   );
 };
 
 export default SocialMedia;
+
 

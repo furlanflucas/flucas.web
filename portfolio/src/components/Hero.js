@@ -2,9 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import styles from "./Hero.module.scss";
 import SocialMedia from "./socialMedia/SocialMedia";
-import DisplayLottie from "./displayLottie/DisplayLottie";
-import landingPerson from "../assets/lottie/landingPerson";
-import emoji from "react-easy-emoji";
 
 const Hero = () => {
   return (
@@ -22,9 +19,10 @@ const Hero = () => {
             animate={{ opacity: 1, x: 0 }} 
             transition={{ delay: 0.5, duration: 1 }}
             className={styles.heroText}
+            style={{ marginBottom: "20px" }}
           >
             Hi, I'm <span className={styles.highlight}>Lucas Furlan</span> 
-            <span className={styles.waveEmoji}>{emoji()}</span>
+            
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0 }} 
@@ -32,16 +30,12 @@ const Hero = () => {
             transition={{ delay: 1, duration: 1 }}
             className={styles.heroSubtext}
           >
-            Data Engineer in the making, problem-solver at heart! I thrive on building data pipelines, optimizing workflows, and making things run smoothly. Always learning, always innovating!. 🌱💡
+            Data Engineer in the making, problem-solver at heart! I thrive on building data pipelines, optimizing workflows, and making things run smoothly. Always learning, always innovating!
           </motion.p>
 
           {/* Keeps only LinkedIn & GitHub */}
           <SocialMedia />
-        </div>
 
-        {/* Image / Animation Section */}
-        <div className={styles.heroImageDiv}>
-          <DisplayLottie animationData={landingPerson} />
         </div>
       </div>
     </motion.section>

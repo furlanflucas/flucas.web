@@ -88,18 +88,19 @@ $kaggle: #20beff;
 // Global Styles
 @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
 
 
 :root {
-    --primary-color: #212327;  // Dark Background
-    --secondary-color: #e0e9e2e3; // Accent Blue
-    --text-color: #f7fcf9; // Light Text
+    --primary-color: #0B0C10;  // Dark Background
+    --secondary-color: #c5c6c7; 
+    --text-color: #c5c6c7; // Light Text
     --text-muted: #dbdfeb; // Muted Text
-    --font-primary: 'Doto', sans-serif; /* Set Doto as the primary font */
+    --font-primary: 'Roboto', sans-serif; /* Set Doto as the primary font */
   }
   
   body {
-    background-color: var(--primary-color);
+    background-color: #0B0C10;
     color: var(--text-color);
     font-family: var(--font-primary);
     margin: 0;
@@ -126,12 +127,16 @@ $kaggle: #20beff;
     scroll-behavior: smooth;
   }
   h1 {
-    font-size: 3rem; /* Adjust for main headings */
+    font-family: "Roboto";
+    font-size: 70px;
+    line-height: 40px;
+    color: #45a29e; /* Adjust for main headings */
   }
   
   h2 {
-    font-size: 2.5rem; /* Adjust for section titles */
+    font-family: "Roboto";
   }
+
 
   
   

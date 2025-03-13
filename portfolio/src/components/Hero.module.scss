@@ -1,136 +1,76 @@
-@import "../styles/global.scss"; /* Keeping global color imports if needed */
+@use "../styles/global.scss" as *; /* Keeping global color imports if needed */
 
 .hero {
   width: 90%;
-  padding: 20px 10px;
+  padding: 40px 20px; /* Increase padding */
   margin: 0px auto;
-  margin-top: 4rem;
+  margin-top: 6rem; /* Add more space from Navbar */
 }
 
-.hero-main {
+.heroMain {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  gap: 40px; /* Adds space between text and image */
 }
 
-.hero-text-div {
+.heroTextDiv {
   flex: 1;
-  margin-bottom: 30px;
+  margin-bottom: 40px; /* More space below text */
 }
 
-.hero-text {
+.heroText {
   font-size: 70px;
-  line-height: 1.1;
-  color: var(--text-color) !important;
+  line-height: 1.2;
+  color: var(--primary-text-color); /* Use variables */
+  margin-bottom: 20px; /* Adds space below heading */
 }
 
-.hero-subtext {
+.heroSubtext {
   font-size: 30px;
   line-height: 40px;
-  color: var(--text-muted);
+  color: var(--secondary-text-color);
+  margin-bottom: 30px; /* Space before buttons */
 }
 
-.hero-image-div > img {
+.heroImageDiv > img {
   max-width: 100%;
   height: auto;
+  border-radius: 10px; /* Smooth edges */
 }
 
-/* Buttons */
-.button-container {
-  display: flex;
-  margin-top: 40px;
-}
+/* Media Queries for Better Responsive Spacing */
+@media (max-width: 1024px) {
+  .heroMain {
+    flex-direction: column; /* Stack text and image */
+    align-items: center;
+    text-align: center;
+  }
 
-.hero-button {
-  background-color: var(--secondary-color);
-  color: #66FcF1;
-  padding: 10px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s ease-in-out;
-  margin-right: 10px;
-}
-
-.hero-button:hover {
-  background-color: var(--primary-color);
-  transform: scale(1.05);
-}
-
-/* About Me Section */
-.about {
-  width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 2rem;
-  text-align: left;
-}
-
-.about h2 {
-  font-size: 2.5rem;
-  color: var(--secondary-color);
-  margin-bottom: 10px;
-}
-
-.about p {
-  font-size: 1.2rem;
-  color: var(--text-muted);
-  line-height: 1.6;
-}
-
-/* Emoji Animation */
-.wave-emoji {
-  animation-duration: 1.8s;
-  animation-iteration-count: infinite;
-  animation-name: wave;
-  display: inline-block;
-  transform-origin: 70% 70%;
-}
-
-@keyframes wave {
-  0% { transform: rotate(0deg); }
-  10% { transform: rotate(-10deg); }
-  20% { transform: rotate(12deg); }
-  30% { transform: rotate(-10deg); }
-  40% { transform: rotate(9deg); }
-  50% { transform: rotate(0deg); }
-  100% { transform: rotate(0deg); }
-}
-
-/* Media Queries */
-@media (max-width: 1380px) {
-  .hero-text {
+  .heroText {
     font-size: 50px;
   }
-  .hero-subtext {
-    font-size: 20px;
+
+  .heroSubtext {
+    font-size: 24px;
+  }
+
+  .heroImageDiv {
+    width: 70%;
   }
 }
 
 @media (max-width: 768px) {
-  .button-container {
-    justify-content: space-around;
-  }
-  .hero-text {
-    font-size: 30px;
-    text-align: center;
-  }
-  .hero-subtext {
-    font-size: 16px;
-    line-height: normal;
-    text-align: center;
-  }
-  .hero-main {
-    display: block;
-  }
-  .hero-image-div {
-    height: 256px;
-  }
-}
-
-@media (max-width: 320px) {
   .hero {
-    width: auto;
+    padding: 20px;
+  }
+
+  .heroText {
+    font-size: 40px;
+  }
+
+  .heroSubtext {
+    font-size: 20px;
   }
 }

@@ -1,4 +1,4 @@
-@import "../styles/global.scss"; /* Adjusted for relative path */
+@use "../styles/global.scss" as *; /* Adjusted for relative path */
 
 .experienceSection {
   max-width: 2000px;
