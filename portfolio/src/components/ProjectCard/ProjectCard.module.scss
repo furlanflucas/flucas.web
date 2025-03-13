@@ -1,0 +1,56 @@
+.project-card {
+    background: rgba(5, 139, 197, 0.704); /* Matches experience card color */
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%; /* Ensures 3 cards in one row */
+    min-width: 300px;
+    max-width: 400px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Project Title */
+  .project-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+  }
+  
+  /* Project Description */
+  .project-description {
+    font-size: 1rem;
+    color: var(--text-muted);
+  }
+  
+  /* Project Link */
+  .project-link {
+    color: var(--secondary-color);
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: auto;
+  }
+  
+  .project-link:hover {
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .project-card {
+      width: 45%; /* Two projects per row */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .project-card {
+      width: 100%; /* Stack them in a single column */
+    }
+  }
+  

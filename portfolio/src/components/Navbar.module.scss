@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
+  padding: 10px 1px;
   background: #212327;
   backdrop-filter: blur(10px);
   border-bottom: 2px solid var(--secondary-color);
@@ -17,13 +17,17 @@
   font-weight: bold;
   color: var(--secondary-color);
   font-family: 'mono';
-  margin-left: 10px; /* Moves it closer to the left */
+  margin-left: 30px; /* Increase left margin */
 }
+
 .navLinks {
   list-style: none;
   display: flex;
-  gap: 10px; /* Increase spacing for better balance */
-  margin: 0 auto; /* Centers the links */
-  padding-right: 0px; /* Pushes the links slightly left */
+  gap: 20px; /* Adjust spacing between links */
+  margin-left: auto; /* Pushes nav links to the right */
+  padding-right: 10px; /* Adds 5px spacing at the end */
 }
 
+.navLinks li:last-child {
+  margin-right: 5px; /* Adds 5px space after "Contact" */
+}

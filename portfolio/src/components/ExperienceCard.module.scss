@@ -1,27 +1,72 @@
+.experienceSection {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 60px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+.experienceContainer {
+  display: flex;
+  flex-wrap: nowrap; /* Prevents cards from wrapping to a new row */
+  gap: 20px;
+  justify-content: center; /* Centers the cards horizontally */
+  align-items: stretch; /* Ensures equal height */
+}
+
+/* Experience Card */
 .experience-card {
-    background: rgba(255, 255, 255, 0.215);
-    padding: 20px;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 800px;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  background: rgba(5, 139, 197, 0.704);
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%; /* Ensures 3 cards fit in one row */
+  min-width: 300px; /* Prevents cards from being too small */
+  max-width: 400px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.experience-card:hover {
+  transform: scale(1.05);
+}
+
+/* Experience Banner */
+.experience-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--primary-color);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Company Name */
+.experience-text-company {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 2064px) {
+  .experienceContainer {
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
   }
-  
-  .experience-banner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: var(--primary-color);
-    padding: 10px;
-    border-radius: 8px;
+  .experience-card {
+    width: 45%; /* Two cards per row on tablets */
   }
-  
-  .experience-text-company {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  .experience-card {
+    width: 100%; /* Stack them in a single column on smaller screens */
   }
-  
+}

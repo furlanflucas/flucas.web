@@ -1,6 +1,6 @@
-.experienceCard {
-  max-width: 1000px;
-  margin: 80px auto 0 auto;
+.projectsSection {
+  max-width: 1200px;
+  margin: 80px auto;
   padding: 60px;
   text-align: center;
 }
@@ -11,9 +11,52 @@ h2 {
   margin-bottom: 20px;
 }
 
-.experienceContainer {
+.projectsContainer {
+  display: flex;
+  flex-wrap: nowrap; /* Prevents projects from stacking */
+  gap: 20px;
+  justify-content: center; /* Centers the projects */
+  align-items: stretch; /* Ensures equal height */
+}
+
+/* Project Card */
+.project-card {
+  background: rgba(255, 255, 255, 0.215);
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%; /* Ensures 3 projects fit in one row */
+  min-width: 300px;
+  max-width: 400px;
+  text-align: left;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  align-items: center;
+  gap: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+/* Project Title */
+.project-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .projectsContainer {
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+  }
+  .project-card {
+    width: 45%; /* Two projects per row on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    width: 100%; /* Stack them in a single column on smaller screens */
+  }
 }

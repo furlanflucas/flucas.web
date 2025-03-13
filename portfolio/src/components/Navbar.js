@@ -12,7 +12,6 @@ const Navbar = () => {
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <div className={styles.spacer}></div> {/* Spacer to prevent content from hiding under the navbar */}
     </>
   );
 };
