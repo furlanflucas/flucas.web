@@ -16,8 +16,11 @@
 }
 
 .heroTextDiv {
-  flex: 1;
-  margin-bottom: 40px; /* More space below text */
+  font-family: "Victor Mono"; /* Use the global variable */
+  font-size: 70px;
+  line-height: 1.2;
+  color: var(--primary-text-color);
+  margin-bottom: 20px; /* More space below text */
 }
 
 .heroText {

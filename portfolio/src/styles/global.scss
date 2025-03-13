@@ -86,9 +86,9 @@ $instagram: #c13584;
 $kaggle: #20beff;
 
 // Global Styles
-@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 
 :root {
@@ -102,7 +102,7 @@ $kaggle: #20beff;
   body {
     background-color: #0B0C10;
     color: var(--text-color);
-    font-family: var(--font-primary);
+    font-family: "Victor Mono";
     margin: 0;
     padding: 0;
   }
@@ -127,14 +127,14 @@ $kaggle: #20beff;
     scroll-behavior: smooth;
   }
   h1 {
-    font-family: "Roboto";
+    font-family: "Victor Mono";
     font-size: 70px;
     line-height: 40px;
     color: #45a29e; /* Adjust for main headings */
   }
   
   h2 {
-    font-family: "Roboto";
+    font-family: "Victor Mono";
   }
 
 
