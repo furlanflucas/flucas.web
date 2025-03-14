@@ -24,10 +24,10 @@ h2 {
 /* Project Card Styling */
 .project-card {
   position: relative;
-  background-color: $lightBackground2;
-  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  background-color: #45A29E; /* Replaced $lightBackground2 */
+  box-shadow: #45A29E 0px 10px 30px -15px; /* Replaced $lightBoxShadowDark */
   border-radius: 10px;
-  border: 1px solid $lightBorder1;
+  border: 1px solid #45A29E; /* Replaced $lightBorder1 */
   width: 30%; /* Each project takes 30% of the row */
   min-width: 280px; /* Prevents it from getting too small */
   text-align: left;
@@ -36,21 +36,21 @@ h2 {
 
 .project-card-dark {
   position: relative;
-  background-color: $darkBackground;
-  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  background-color: #1F2833; /* Replaced $darkBackground */
+  box-shadow: #45A29E 0px 10px 30px -15px; /* Replaced $lightBoxShadowDark */
   border-radius: 10px;
-  border: 1px solid $lightBorder1;
+  border: 1px solid #45A29E; /* Replaced $lightBorder1 */
 }
 
 .project-card:hover {
-  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+  box-shadow: #45A29E 0px 20px 30px -10px; /* Replaced $lightBoxShadowDark */
 }
 
 .project-title {
   text-align: center;
   padding: 1.5rem;
   margin: 0;
-  color: $lightBackground1;
+  color: #0B0C10;
   font-size: 25px;
   font-weight: 700;
   text-overflow: ellipsis;

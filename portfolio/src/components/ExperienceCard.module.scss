@@ -1,41 +1,31 @@
-.experienceSection {
-  max-width: 1200px;
-  margin: 80px auto;
-  padding: 60px;
-  text-align: center;
-}
+@use "../styles/global.scss" as *; /* Import global styles */
 
-h2 {
-  font-size: 2.5rem;
-  color: #1f2833;
-  margin-bottom: 20px;
-}
-
-.experienceContainer {
-  display: flex;
-  flex-wrap: nowrap; /* Prevents cards from wrapping to a new row */
-  gap: 20px;
-  justify-content: center; /* Centers the cards horizontally */
-  align-items: stretch; /* Ensures equal height */
-}
-
-/* Experience Card */
+/* Experience Card Container */
 .experience-card {
-  background: #45A29E;
+  background: var(--experience-card-bg, #45A29E); /* Default if not set */
+  color: var(--experience-card-text, #ffffff); /* Text color */
   padding: 20px;
   border-radius: 10px;
-  width: 30%; /* Ensures 3 cards fit in one row */
-  min-width: 300px; /* Prevents cards from being too small */
+  width: 30%;
+  min-width: 300px;
   max-width: 400px;
   text-align: left;
   display: flex;
   flex-direction: column;
   gap: 10px;
   transition: transform 0.3s ease-in-out;
+  
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.2); /* Subtle glow */
+  }
 }
 
-.experience-card:hover {
-  transform: scale(1.05);
+/* Dark Mode */
+.experience-card-dark {
+  background: var(--experience-card-dark-bg, #1F2833);
+  color: var(--experience-card-dark-text, #C5C6C7);
+  border: 1px solid #45A29E;
 }
 
 /* Experience Banner */
@@ -48,17 +38,44 @@ h2 {
   border-radius: 8px;
 }
 
-/* Company Name */
-.experience-text-company {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #1f2833;
+/* Text Styles */
+.experience-text {
+  &-company {
+    color: #66FCF1;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  &-role {
+    color: #0B0C10;
+    font-weight: 900;
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  &-date {
+    color: #0B0C10;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  &-desc,
+  &-bul {
+    color: #0B0C10;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  &-bul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
 }
 
 /* Responsive Design */
 @media (max-width: 2064px) {
   .experienceContainer {
-    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    flex-wrap: wrap;
   }
   .experience-card {
     width: 45%; /* Two cards per row on tablets */
@@ -67,6 +84,6 @@ h2 {
 
 @media (max-width: 768px) {
   .experience-card {
-    width: 100%; /* Stack them in a single column on smaller screens */
+    width: 100%; /* Stack in a single column on smaller screens */
   }
 }

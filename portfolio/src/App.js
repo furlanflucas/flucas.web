@@ -11,8 +11,8 @@ const App = () => {
     <div>
       <Navbar />
       <Hero />
-      <ExperienceSection />
       <Projects />
+      <ExperienceSection />
       <Contact />
     </div>
   );

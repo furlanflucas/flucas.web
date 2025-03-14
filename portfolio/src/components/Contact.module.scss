@@ -1,28 +1,46 @@
 .contact {
-    padding: 80px 20px;
-    background-color: var(--primary-color);
+  padding: 80px 20px;
+  background-color: var(--primary-color);
+  text-align: center;
+  
+  display: flex; /* Make items appear in a row */
+  flex-wrap: wrap; /* Allows responsiveness */
+  justify-content: center; /* Centers items */
+  align-items: center; /* Aligns items vertically */
+  gap: 30px; /* Adds spacing between items */
+}
+
+/* Header */
+.contact h2 {
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  margin: 0; /* Removes extra spacing */
+}
+
+/* Contact Info */
+.contact p {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  margin: 0; /* Removes default margin */
+}
+
+/* Links */
+.contact a {
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: white;
+}
+
+/* Responsive: Stack on small screens */
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column; /* Stack on small screens */
     text-align: center;
   }
-  
-  .contact h2 {
-    font-size: 2.5rem;
-    color: var(--secondary-color);
-  }
-  
-  .contact p {
-    font-size: 1.2rem;
-    color: var(--text-muted);
-    margin-top: 10px;
-  }
-  
-  .contact a {
-    color: var(--secondary-color);
-    font-weight: bold;
-    font-size: 1.2rem;
-    text-decoration: none;
-  }
-  
-  .contact a:hover {
-    color: white;
-  }
-  
+}
+
