@@ -5,20 +5,20 @@
 
 
 :root {
-    --primary-color: #0B0C10; 
+    --primary-color: #0C243C; 
     --secondary-color: #c5c6c7; 
-    --text-color: #c5c6c7;
+    --text-color: #c9d1d5;
     --text-muted: #dbdfeb;
     --font-primary: 'Roboto', sans-serif;
     
-    --experience-card-bg: #45A29E; /* <-- Set a unique color */
+    --experience-card-bg: #7E8C9C; /* <-- Set a unique color */
       $subTitle: #C5C6C7;  /* Example color */
-      $skillsColor: #66FCF1; /* Example hover color */
+      $skillsColor: #55C2C3; /* Example hover color */
 
   }
 
     body {
-    background-color: #0B0C10;
+    background-color: #0C243C;
     color: var(--text-color);
     font-family: "Victor Mono";
     margin: 0;
@@ -48,14 +48,14 @@
     font-family: "Victor Mono";
     font-size: 70px;
     line-height: 40px;
-    color: #45a29e; /* Adjust for main headings */
+    color: #7E8C9C; /* Adjust for main headings */
   }
   
   h2 {
     font-family: "Victor Mono";
     font-size: 40px;
     line-height: 40px;
-    color: #c5c6c7;
+    color: #c9d1d5;
   }
 
 

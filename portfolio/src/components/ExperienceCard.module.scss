@@ -2,8 +2,8 @@
 
 /* Experience Card Container */
 .experience-card {
-  background: var(--experience-card-bg, #45A29E); /* Default if not set */
-  color: var(--experience-card-text, #ffffff); /* Text color */
+  background: #7E8C9C; /* Default if not set */
+  color: #c9d1d5; /* Text color */
   padding: 20px;
   border-radius: 10px;
   width: 30%;
@@ -21,13 +21,6 @@
   }
 }
 
-/* Dark Mode */
-.experience-card-dark {
-  background: var(--experience-card-dark-bg, #1F2833);
-  color: var(--experience-card-dark-text, #C5C6C7);
-  border: 1px solid #45A29E;
-}
-
 /* Experience Banner */
 .experience-banner {
   display: flex;
@@ -41,27 +34,27 @@
 /* Text Styles */
 .experience-text {
   &-company {
-    color: #66FCF1;
+    color: #C9D1D5;
     font-size: 1.5rem;
     font-weight: bold;
   }
 
   &-role {
-    color: #0B0C10;
+    color: #0C243C;
     font-weight: 900;
     font-size: 25px;
     margin-bottom: 10px;
   }
 
   &-date {
-    color: #0B0C10;
+    color: #0C243C;
     font-size: 18px;
     font-weight: 600;
   }
 
   &-desc,
   &-bul {
-    color: #0B0C10;
+    color: #0C243C;
     font-size: 14px;
     line-height: 1.5;
   }
