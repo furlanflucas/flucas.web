@@ -3,7 +3,7 @@
 .projectsSection {
   max-width: 2000px;
   margin: 80px auto;
-  padding: 60px;
+  padding: 80px;
   text-align: center;
 }
 
@@ -16,8 +16,8 @@ h2 {
 .projectsContainer {
   display: flex;
   flex-wrap: wrap;  /* Allows multiple items per row */
-  gap: 5px;
-  justify-content: space-between; /* Spreads projects evenly */
+  gap: 10px;
+  justify-content: space-around; /* Spreads projects evenly */
   align-items: stretch; /* Ensures all cards align properly */
 }
 
@@ -32,14 +32,6 @@ h2 {
   min-width: 280px; /* Prevents it from getting too small */
   text-align: left;
   transition: transform 0.3s ease-in-out;
-}
-
-.project-card-dark {
-  position: relative;
-  background-color: #1F2833; /* Replaced $darkBackground */
-  box-shadow: #45A29E 0px 10px 30px -15px; /* Replaced $lightBoxShadowDark */
-  border-radius: 10px;
-  border: 1px solid #45A29E; /* Replaced $lightBorder1 */
 }
 
 .project-card:hover {
@@ -59,7 +51,7 @@ h2 {
 }
 
 /* Responsive Adjustments */
-@media (max-width: 1024px) {
+@media (max-width: 2024px) {
   .project-card {
     width: 45%; /* Two cards per row */
   }
