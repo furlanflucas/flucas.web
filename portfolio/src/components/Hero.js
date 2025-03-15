@@ -30,7 +30,7 @@ const Hero = () => {
             transition={{ delay: 1, duration: 1 }}
             className={styles.heroSubtext}
           >
-            Data Engineer in the making, problem-solver at heart! I thrive on building data pipelines, optimizing workflows, and making things run smoothly. Always learning, always innovating!
+            Cloud & Data Engineer passionate about building scalable systems, optimizing workflows, and solving complex problems. With experience in trust & safety operations, autonomous vehicle data, and cloud-based analytics, I thrive at making data work efficiently. Always learning, always innovating!
           </motion.p>
 
           {/* Keeps only LinkedIn & GitHub */}

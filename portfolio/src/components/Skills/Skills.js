@@ -1,36 +1,38 @@
 import React from "react";
 import styles from "./Skills.module.scss";
+import pythonIcon from "../../assets/python.svg";
+import jsIcon from "../../assets/icons8-javascript-50.png";
+import reactIcon from "../../assets/azure.svg";
+import sqlIcon from "../../assets/ql-50.png";
+import awsIcon from "../../assets/icons8-amazon-aws-50.png";
+import kafkaIcon from "../../assets/apache-kafka-64.png"; // Example custom icon
+
+const skills = [
+  { name: "Python", icon: pythonIcon },
+  { name: "JavaScript", icon: jsIcon },
+  { name: "Azure", icon: reactIcon },
+  { name: "SQL", icon: sqlIcon },
+  { name: "AWS", icon: awsIcon },
+  { name: "Kafka", icon: kafkaIcon }, // Added Kafka
+];
 
 const Skills = () => {
   return (
     <div className={styles.skillsContainer}>
       <h2 className={styles.skillsTitle}>Skills</h2>
-      <div className={styles.skillsIcons}>
-        <div className={styles.softwareSkillInline}>
-          <i className="devicon-python-plain"></i>
-          <button className={styles.skillButton}>Python</button>
-        </div>
-        <div className={styles.softwareSkillInline}>
-          <i className="devicon-javascript-plain"></i>
-          <button className={styles.skillButton}>JavaScript</button>
-        </div>
-        <div className={styles.softwareSkillInline}>
-          <i className="devicon-react-original"></i>
-          <button className={styles.skillButton}>React</button>
-        </div>
-        <div className={styles.softwareSkillInline}>
-          <i className="devicon-mysql-plain"></i> {/* SQL Icon */}
-          <button className={styles.skillButton}>SQL</button>
-        </div>
-        <div className={styles.softwareSkillInline}>
-          <i className="devicon-amazonwebservices-plain"></i> {/* AWS Icon */}
-          <button className={styles.skillButton}>AWS</button>
-        </div>
+      <div className={styles.skillsGrid}>
+        {skills.map((skill, index) => (
+          <div key={index} className={styles.skillBadge}>
+            <img src={skill.icon} alt={skill.name} className={styles.skillIcon} />
+            <span>{skill.name}</span>
+          </div>
+        ))}
       </div>
     </div>
   );
 };
 
 export default Skills;
+
 
 

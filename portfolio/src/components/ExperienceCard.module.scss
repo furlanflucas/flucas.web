@@ -2,8 +2,8 @@
 
 /* Experience Card Container */
 .experience-card {
-  background: #7E8C9C; /* Default if not set */
-  color: #c9d1d5; /* Text color */
+  background: #55C2C3; /* Default if not set */
+  color: #0C243C; /* Text color */
   padding: 20px;
   border-radius: 10px;
   width: 30%;
@@ -15,6 +15,7 @@
   gap: 10px;
   transition: transform 0.3s ease-in-out;
   
+  
   &:hover {
     transform: scale(1.05);
     box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.2); /* Subtle glow */
@@ -25,7 +26,7 @@
 .experience-banner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center; /* Center items horizontally */
   background: var(--primary-color);
   padding: 10px;
   border-radius: 8px;
@@ -37,7 +38,10 @@
     color: #C9D1D5;
     font-size: 1.5rem;
     font-weight: bold;
+    text-align: center;
+    width: 100%; /* Ensures it takes full width */
   }
+
 
   &-role {
     color: #0C243C;
@@ -55,7 +59,7 @@
   &-desc,
   &-bul {
     color: #0C243C;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.5;
   }
 
