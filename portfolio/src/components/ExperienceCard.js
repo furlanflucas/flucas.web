@@ -2,27 +2,21 @@ import React, { useState, createRef } from "react";
 import styles from "./ExperienceCard.module.scss";
 import ColorThief from "colorthief";
 
-// 🔹 Importing Company Logos
-import cruiseLogo from "../../assets/cruise.svg";
-import datasiteLogo from "../../assets/datasite.svg";
-import airbnbLogo from "../../assets/airbnb.svg";
+// 🔹 Importing SVGs as React Components
+import { ReactComponent as CruiseLogo } from "../../assets/cruise.svg";
+import { ReactComponent as DatasiteLogo } from "../../assets/datasite.svg";
+import { ReactComponent as AirbnbLogo } from "../../assets/airbnb.svg";
 
-
-// 🔹 Mapping Company Names to Logos
+// 🔹 Corrected Mapping of Company Logos (Using Components)
 const companyLogos = {
-  "Cruise": cruiseLogo,
-  "Datasite": datasiteLogo,
-  "Airbnb": airbnbLogo,
+  "Cruise": CruiseLogo,
+  "Datasite": DatasiteLogo,
+  "Airbnb": AirbnbLogo,
 };
 
 export default function ExperienceCard({ cardInfo, isDark }) {
   const [colorArrays, setColorArrays] = useState([]);
   const imgRef = createRef();
-
-  function getColorArrays() {
-    const colorThief = new ColorThief();
-    setColorArrays(colorThief.getColor(imgRef.current));
-  }
 
   function rgb(values) {
     return values ? `rgb(${values.join(", ")})` : null;
@@ -40,21 +34,19 @@ export default function ExperienceCard({ cardInfo, isDark }) {
 
   return (
     <div className={isDark ? styles["experience-card-dark"] : styles["experience-card"]}>
+      {/* 🔹 Experience Banner with Logo Inside */}
       <div style={{ background: rgb(colorArrays) }} className={styles["experience-banner"]}>
         <div className={styles["experience-blurred_div"]}></div>
+        
+        {/* 🔹 Display Company Logo Instead of Text */}
         <div className={styles["experience-div-company"]}>
-          {/* 🔹 Display Company Logo Instead of Name */}
-          {companyLogos[cardInfo.company] ? (
-            <img 
-              src={companyLogos[cardInfo.company]} 
-              alt={cardInfo.company} 
-              className={styles["company-logo"]} 
-            />
-          ) : (
-            <h5 className={styles["experience-text-company"]}>{cardInfo.company}</h5>
-          )}
+          {cardInfo.company === "Cruise" && <CruiseLogo className={styles["company-logo"]} />}
+          {cardInfo.company === "Datasite" && <DatasiteLogo className={styles["company-logo"]} />}
+          {cardInfo.company === "Airbnb" && <AirbnbLogo className={styles["company-logo"]} />}
         </div>
+
       </div>
+
       <div className={styles["experience-text-details"]}>
         <h5 className={styles["experience-text-role"]}>{cardInfo.role}</h5>
         <h5 className={styles["experience-text-date"]}>{cardInfo.date}</h5>
