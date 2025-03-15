@@ -1,26 +1,54 @@
 .skillsContainer {
-  text-align: center;
-  margin: 15rem 0;
+  max-width: 1200px; /* Matches the Hero section width */
+  margin: 0 auto;
+  padding: 6rem 2rem; /* Adjusted padding */
+  display: flex;
+  flex-direction: column;
+  align-items: start; /* Aligns content to the left */
 }
 
 .skillsTitle {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 2.5rem;
   color: #E4E4DE;
+  margin-bottom: 1.5rem;
+  text-align: left; /* Aligns text with hero section */
 }
 
+/* 🔹 Aligning Text & Skills Similar to Hero Section */
+.skillsContent {
+  display: flex;
+  justify-content: space-between; /* Text on left, skills on right */
+  align-items: center;
+  gap: 60px; /* Adds space between text and skills */
+  width: 100%;
+}
+
+/* 🔹 Text Styling */
+.skillsText {
+  flex: 1;
+  text-align: left;
+  font-size: 1.5rem;
+  color: #C4C5BA;
+  line-height: 1.7;
+  font-weight: 500;
+  max-width: 600px;
+}
+
+/* 🔹 Skills Grid Styling */
 .skillsGrid {
+  flex: 1;
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  justify-content: center;
+  gap: 15px;
+  justify-content: flex-start; /* Aligns skills to the left */
 }
 
+/* 🔹 Skill Badge */
 .skillBadge {
   display: flex;
   align-items: center;
   gap: 20px;
-  background-color: #595f39; // Uniform color
+  background-color: #595f39;
   color: #E4E4DE;
   padding: 10px 16px;
   border-radius: 10px;
@@ -30,10 +58,24 @@
   transition: transform 0.2s ease-in-out;
 }
 
-.skillBadge i {
-  font-size: 1.5rem;
-}
-
 .skillBadge:hover {
   transform: scale(1.1);
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 1024px) {
+  .skillsContent {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .skillsText {
+    text-align: center;
+    max-width: 700px;
+  }
+
+  .skillsGrid {
+    justify-content: center;
+  }
 }

@@ -20,19 +20,30 @@ const Skills = () => {
   return (
     <div className={styles.skillsContainer}>
       <h2 className={styles.skillsTitle}>Skills</h2>
-      <div className={styles.skillsGrid}>
-        {skills.map((skill, index) => (
-          <div key={index} className={styles.skillBadge}>
-            <img src={skill.icon} alt={skill.name} className={styles.skillIcon} />
-            <span>{skill.name}</span>
-          </div>
-        ))}
+      
+      <div className={styles.skillsContent}>
+        {/* Skills Text */}
+        <div className={styles.skillsText}>
+          <p>
+            Technology evolves, and so do I. I embrace challenges as opportunities to grow, 
+            constantly refining my skills to build better, more resilient systems. 
+            Every problem has a solution, I just have to find it.
+          </p>
+        </div>
+
+        {/* Skills Grid */}
+        <div className={styles.skillsGrid}>
+          {skills.map((skill, index) => (
+            <div key={index} className={styles.skillBadge}>
+              <img src={skill.icon} alt={skill.name} className={styles.skillIcon} />
+              <span>{skill.name}</span>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
 };
 
 export default Skills;
-
-
 

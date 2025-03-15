@@ -2,7 +2,7 @@
 
 /* Experience Card Container */
 .experience-card {
-  background: #595f39; /* Default if not set */
+  background: #1B1B1B; /* Default background */
   color: #E4E4DE; /* Text color */
   padding: 20px;
   border-radius: 10px;
@@ -13,11 +13,13 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  transition: transform 0.3s ease-in-out;
-  
-  
+  border: 1px solid #C4C5BA; /* Adds a fine border */
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out, border 0.3s ease-in-out;
+
   &:hover {
     transform: scale(1.05);
+    background: #595f39; /* New background color on hover */
+    border-color: #E4E4DE; /* Changes border color on hover */
     box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.2); /* Subtle glow */
   }
 }
@@ -39,9 +41,8 @@
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
-    width: 100%; /* Ensures it takes full width */
+    width: 100%;
   }
-
 
   &-role {
     color: #E4E4DE;
