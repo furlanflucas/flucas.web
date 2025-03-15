@@ -2,6 +2,19 @@ import React, { useState, createRef } from "react";
 import styles from "./ExperienceCard.module.scss";
 import ColorThief from "colorthief";
 
+// 🔹 Importing Company Logos
+import cruiseLogo from "../../assets/cruise.svg";
+import datasiteLogo from "../../assets/datasite.svg";
+import airbnbLogo from "../../assets/airbnb.svg";
+
+
+// 🔹 Mapping Company Names to Logos
+const companyLogos = {
+  "Cruise": cruiseLogo,
+  "Datasite": datasiteLogo,
+  "Airbnb": airbnbLogo,
+};
+
 export default function ExperienceCard({ cardInfo, isDark }) {
   const [colorArrays, setColorArrays] = useState([]);
   const imgRef = createRef();
@@ -30,9 +43,17 @@ export default function ExperienceCard({ cardInfo, isDark }) {
       <div style={{ background: rgb(colorArrays) }} className={styles["experience-banner"]}>
         <div className={styles["experience-blurred_div"]}></div>
         <div className={styles["experience-div-company"]}>
-          <h5 className={styles["experience-text-company"]}>{cardInfo.company}</h5>
+          {/* 🔹 Display Company Logo Instead of Name */}
+          {companyLogos[cardInfo.company] ? (
+            <img 
+              src={companyLogos[cardInfo.company]} 
+              alt={cardInfo.company} 
+              className={styles["company-logo"]} 
+            />
+          ) : (
+            <h5 className={styles["experience-text-company"]}>{cardInfo.company}</h5>
+          )}
         </div>
-
       </div>
       <div className={styles["experience-text-details"]}>
         <h5 className={styles["experience-text-role"]}>{cardInfo.role}</h5>
