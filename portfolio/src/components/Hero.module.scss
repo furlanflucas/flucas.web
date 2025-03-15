@@ -5,7 +5,7 @@
   padding: 40px 20px; /* Increase padding */
   margin: 0px auto;
   margin-top: 6rem; /* Add more space from Navbar */
-  border-bottom: 2px solid #7E8C9C;
+  border-bottom: 2px solid #C4C5BA;
 }
 
 .heroMain {
@@ -27,14 +27,14 @@
 .heroText {
   font-size: 70px;
   line-height: 1.2;
-  color: var(--primary-text-color); /* Use variables */
+  color: #E4E4DE; /* Use variables */
   margin-bottom: 20px; /* Adds space below heading */
 }
 
 .heroSubtext {
   font-size: 30px;
   line-height: 40px;
-  color: var(--secondary-text-color);
+  color: #C4C5BA;
   margin-bottom: 30px; /* Space before buttons */
 }
 
@@ -42,6 +42,7 @@
   max-width: 100%;
   height: auto;
   border-radius: 10px; /* Smooth edges */
+    
 }
 
 /* Media Queries for Better Responsive Spacing */

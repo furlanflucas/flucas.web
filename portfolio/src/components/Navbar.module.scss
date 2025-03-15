@@ -7,9 +7,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 10px;
-  background: #0C243C;
+  background: #1B1B1B;
   backdrop-filter: blur(10px);
-  border-bottom: 2px solid #7E8C9C;
+  border-bottom: 2px solid #C4C5BA;
   z-index: 1000;
 }
 .logo {
@@ -17,7 +17,7 @@
   font-style: normal; /* Makes the text italic */
   font-weight: 300; /* Optional: Adjust boldness */
   margin-left: 50px; /* Adjust space as needed */
-  color: #55C2C3;
+  color: #C4C5BA;
   font-family: 'Rubik Glitch', sans-serif; /* Apply Roboto font */
 }
 
@@ -34,13 +34,13 @@
   font-style: normal; 
   font-weight: 400; /* Regular weight */
   font-size: 20px; /* Adjust for readability */
-  color: #55C2C3; /* Uses global text color */
+  color: #C4C5BA; /* Uses global text color */
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
 
 .navLinks a:hover {
-  color: #C9D1D5; /* Changes color on hover */
+  color: #E4E4DE; /* Changes color on hover */
 }
 
 .navLinks li:last-child {

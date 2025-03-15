@@ -2,8 +2,8 @@
 
 /* Experience Card Container */
 .experience-card {
-  background: #55C2C3; /* Default if not set */
-  color: #0C243C; /* Text color */
+  background: #595f39; /* Default if not set */
+  color: #E4E4DE; /* Text color */
   padding: 20px;
   border-radius: 10px;
   width: 30%;
@@ -35,7 +35,7 @@
 /* Text Styles */
 .experience-text {
   &-company {
-    color: #C9D1D5;
+    color: #E4E4DE;
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
@@ -44,21 +44,21 @@
 
 
   &-role {
-    color: #0C243C;
+    color: #E4E4DE;
     font-weight: 900;
     font-size: 25px;
     margin-bottom: 10px;
   }
 
   &-date {
-    color: #0C243C;
+    color: #E4E4DE;
     font-size: 18px;
     font-weight: 600;
   }
 
   &-desc,
   &-bul {
-    color: #0C243C;
+    color: #E4E4DE;
     font-size: 18px;
     line-height: 1.5;
   }

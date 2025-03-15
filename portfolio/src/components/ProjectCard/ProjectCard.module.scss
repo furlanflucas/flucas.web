@@ -1,56 +1,76 @@
+/* Project Cards Container */
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* More space between project cards */
+  margin-top: 25px;
+}
+
+/* Project Card Styling */
 .project-card {
-    background: #55C2C3; /* Matches experience card color */
-    padding: 20px;
-    border-radius: 10px;
-    width: 30%; /* Ensures 3 cards in one row */
-    min-width: 300px;
-    max-width: 400px;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    transition: transform 0.3s ease-in-out;
+  position: relative;
+  background-color: #595f39;
+  box-shadow: #595f39 0px 10px 30px -15px;
+  border-radius: 10px;
+  border: 1px solid #7E8C9C;
+  padding: 20px;
+  width: 30%;
+  min-width: 300px;
+  max-width: 400px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect for Project Cards */
+.project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.2); /* Subtle glow */
+}
+
+/* Project Title */
+.project-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #E4E4DE;
+  text-align: left;
+}
+
+/* Project Description */
+.project-description {
+  font-size: 1.2rem;
+  color: #E4E4DE;
+  line-height: 1.5;
+  padding: 0 10px; /* Adds padding for readability */
+}
+
+/* Project Link */
+.project-link {
+  color: #C4C5BA;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.project-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .project-card {
+    width: 45%; /* Two cards per row */
   }
-  
-  .project-card:hover {
-    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    width: 100%; /* Stack in one column */
   }
-  
-  /* Project Title */
-  .project-title {
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: #0c240c;
-  }
-  
-  /* Project Description */
-  .project-description {
-    font-size: 1.5rem;
-    color: #0c240c;
-  }
-  
-  /* Project Link */
-  .project-link {
-    color: #0c240c;
-    font-weight: bold;
-    text-decoration: none;
-    margin-top: auto;
-  }
-  
-  .project-link:hover {
-    color: white;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 2024px) {
-    .project-card {
-      width: 45%; /* Two projects per row */
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .project-card {
-      width: 100%; /* Stack them in a single column */
-    }
-  }
-  
+}

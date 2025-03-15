@@ -1,12 +1,12 @@
 .skillsContainer {
   text-align: center;
-  margin: 2rem 0;
+  margin: 15rem 0;
 }
 
 .skillsTitle {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #fff;
+  color: #E4E4DE;
 }
 
 .skillsGrid {
@@ -19,11 +19,11 @@
 .skillBadge {
   display: flex;
   align-items: center;
-  gap: 8px;
-  background-color: #55C2C3; // Uniform color
-  color: #0c243C;
+  gap: 20px;
+  background-color: #595f39; // Uniform color
+  color: #E4E4DE;
   padding: 10px 16px;
-  border-radius: 20px;
+  border-radius: 10px;
   font-weight: bold;
   font-size: 1rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);

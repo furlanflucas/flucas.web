@@ -20,6 +20,14 @@ const SocialMedia = () => {
       >
         GitHub
       </a>
+      <a 
+        href="/resume.pdf"  // Change this to the actual resume URL
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className={styles.socialButton}
+      >
+        Resume
+      </a>
     </div>
   );
 };

@@ -1,5 +1,6 @@
-@use "../styles/global.scss" as *; /* Adjusted for relative path */
+@use "../styles/global.scss" as *; /* Import global styles */
 
+/* Experience Section */
 .experienceSection {
   max-width: 2000px;
   margin: 80px auto;
@@ -8,181 +9,93 @@
   border-bottom: 1px solid #7E8C9C;
 }
 
+/* Section Heading */
 h2 {
   font-size: 2.5rem;
   color: var(--secondary-color);
   margin-bottom: 20px;
 }
 
+/* Experience Cards Container */
 .experienceContainer {
   display: flex;
-  flex-wrap: wrap; /* Allows multiple items per row */
-  gap: 5px;
-  justify-content: space-between; /* Spreads experiences evenly */
-  align-items: stretch; /* Ensures all cards align properly */
+  flex-wrap: wrap;
+  gap: 20px; /* More space between cards */
+  justify-content: center; /* Centered layout */
+  align-items: stretch;
 }
 
 /* Experience Card Styling */
 .experience-card {
-  position: relative;
-  box-shadow: #0B0C10 0px 10px 30px -15px;
+  background: #E4E4DE; /* Light background */
+  color: #2F2F2F; /* Dark text */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px -15px;
   border-radius: 10px;
   border: 1px solid #7E8C9C;
   width: 30%;
-  min-width: 280px;
+  min-width: 300px;
+  max-width: 400px;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
   transition: transform 0.3s ease-in-out;
 }
 
-
-.experience-card-dark {
-  position: relative;
-  background-color: #0B0C10; /* A different dark mode color */
-  box-shadow: #66FCF1 0px 10px 30px -15px;
-  border-radius: 10px;
-  border: 1px solid #45A29E;
-}
-
+/* Hover Effect */
 .experience-card:hover {
-  box-shadow: #66FCF1 0px 20px 30px -10px;
+  transform: scale(1.03);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px;
 }
 
+/* Experience Banner (Company Name Background) */
 .experience-banner {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 150%;
-  background: #45A29E;
-  border-radius: 10px 10px 0px 0px;
-  filter: blur(0px);
-  height: 11rem;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-
-.experience-blurred_div {
-  position: absolute;
-  background: #45A29E;
-  filter: blur(5px);
-  height: 11rem;
-  top: 0;
-  left: 0;
-  width: 100%;
-  border-radius: 10px 10px 0px 0px;
-}
-
-.experience-div-company {
-  position: absolute;
-  background: transparent;
-  height: 9rem;
-  top: 0;
-  left: 0;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.experience-text-company {
+  background: var(--primary-color);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2F2F2F;
   text-align: center;
-  padding: 1.5rem;
-  margin: 0;
-  color: #66FCF1; /* Changed from $lightBackground1 */
-  font-size: 25px;
-  font-weight: 700;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
 
-.experience-roundedimg {
-  position: absolute;
-  object-fit: cover;
-  left: 0;
-  right: 0;
-  top: 7rem;
-  margin-left: auto;
-  margin-right: auto;
-  width: 8rem;
-  height: 8rem;
-  box-shadow: 0 0.5rem 1rem #2F2F2F; /* Changed from $lightBoxShadowDarker */
-  border-radius: 50%;
-}
-
+/* Experience Role */
 .experience-text-role {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2F2F2F;
   text-align: center;
-  color: #ffffff; /* Changed from $textColor */
-  font-weight: 700;
-  font-size: 25px;
-  margin: 0px;
-  padding-top: 1.5rem;
-  line-height: normal;
 }
 
-.dark-mode-text {
-  color: #ffffff !important; /* Changed from $textColorDark */
-}
-
+/* Experience Date */
 .experience-text-date {
   text-align: center;
-  color: #2F2F2F; /* Changed from $textColor */
-  font-size: 20px;
-  margin: 0px;
-  padding-top: 1rem;
+  color: #595f39;
+  font-size: 16px;
   font-weight: 600;
 }
 
+/* Experience Description */
 .experience-text-desc {
-  text-align: center;
-  color: #ffffff;
+  font-size: 16px;
+  color: #2F2F2F;
+  line-height: 1.5;
+  padding: 0 10px;
 }
 
-.experience-text-details {
-  padding: 1.5rem;
-  margin-top: 2rem;
-}
-
-/* Responsive Adjustments */
+/* Responsive Design */
 @media (max-width: 1024px) {
   .experience-card {
-    width: 25%; /* Two cards per row */
+    width: 45%; /* Two cards per row */
   }
 }
 
 @media (max-width: 768px) {
   .experience-card {
-    width: 100%; /* One card per row on small screens */
-  }
-}
-
-@media (max-width: 1380px) {
-  .experience-text-role {
-    padding-top: 0.5rem;
-    font-size: 22px;
-  }
-  .experience-text-company {
-    font-size: 22px;
-  }
-  .experience-text-date {
-    font-size: 18px;
-  }
-  .experience-roundedimg {
-    width: 6.5rem;
-    height: 6.5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .experience-text-role {
-    font-size: 22px;
-  }
-  .experience-text-company {
-    font-size: 22px;
-  }
-  .experience-text-date {
-    font-size: 18px;
-  }
-  .experience-text-desc {
-    font-size: 16px;
+    width: 100%; /* Stack in one column */
   }
 }
