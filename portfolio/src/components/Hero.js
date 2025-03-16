@@ -42,7 +42,7 @@ const Hero = () => {
             transition={{ delay: 1, duration: 1 }}
             className={styles.heroSubtext}
           >
-            Cloud & Data Engineer passionate about building scalable systems, optimizing workflows, and solving complex problems. With experience in trust & safety operations, autonomous vehicle data, and cloud-based analytics, I thrive at making data work efficiently. Always learning, always innovating!
+            I’m a Cloud & Data Engineer passionate about building scalable data systems, automating workflows, and designing cloud solutions. My background in trust & safety operations, autonomous vehicle data, and cloud-based analytics gives me a unique perspective on making data reliable, efficient, and actionable. I thrive at solving complex problems, whether it's optimizing data pipelines, enhancing fraud detection systems, or integrating cloud technologies. Always learning, always innovating—let’s build something great! 
           </motion.p>
 
           {/* Social Media Links */}

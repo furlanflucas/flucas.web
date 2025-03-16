@@ -18,23 +18,23 @@
 
 .heroTextDiv {
   font-family: "Victor Mono"; /* Use the global variable */
-  font-size: 70px;
-  line-height: 1.2;
+  font-size: 30px;
+  line-height: 1.5;
   color: var(--primary-text-color);
   margin-bottom: 20px; /* More space below text */
 }
 
 .heroText {
-  font-size: 70px;
-  line-height: 1.2;
+  font-size: 35px;
+  line-height: 1.5;
   color: #E4E4DE; /* Use variables */
   margin-bottom: 20px; /* Adds space below heading */
 }
 
 .heroSubtext {
-  font-size: 30px;
+  font-size: 20px;
   line-height: 40px;
-  color: #C4C5BA;
+  color: #E4E4DE;
   margin-bottom: 30px; /* Space before buttons */
 }
 
