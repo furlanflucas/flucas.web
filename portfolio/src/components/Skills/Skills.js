@@ -7,6 +7,7 @@ import sqlIcon from "../../assets/ql-50.png";
 import awsIcon from "../../assets/icons8-amazon-aws-50.png";
 import kafkaIcon from "../../assets/apache-kafka-64.png"; // Example custom icon
 
+
 const skills = [
   { name: "Python", icon: pythonIcon },
   { name: "JavaScript", icon: jsIcon },

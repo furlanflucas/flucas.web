@@ -1,5 +1,4 @@
 @use "../styles/global.scss" as *; /* Import global styles */
-
 /* Experience Card Container */
 .experience-card {
   background: #1B1B1B; /* Default background */
@@ -32,8 +31,8 @@
   background: var(--primary-color);
   padding: 15px;
   border-radius: 8px;
-  height: 100px; /* Increase height if logo is cut off */
-  min-height: 80px; /* Ensure enough space */
+  height: 120px; /* Increase height if the logo is cut off */
+  min-height: 100px; /* Ensure enough space */
   overflow: hidden; /* Prevents layout issues */
 }
 /* 🔹 Ensure the logo fits inside the banner */
@@ -41,17 +40,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%; /* Ensures it takes full width */
-  height: 100%; /* Ensures it fills the banner */
+  width: 100%;
+  height: 100%;
 }
 
 .company-logo {
-  width: 100000px;
-  max-width: 700px; /* Adjust size */
-  max-height: 80px;
-  object-fit: fill; /* Ensures the image scales properly */
-  display: block; /* Ensure it renders */
-  filter: brightness(1); /* Adjust brightness */
+  width: 100%; /* Makes the logo span the full width */
+  height: 100%; /* Ensures it fills the banner */
+  max-height: 200px; /* Prevents distortion */
+  object-fit: contain; /* Maintains aspect ratio while filling the space */
+  display: block;
+  margin-top: -45px; /* Moves the logo up */
+  filter: brightness(1); /* Adjust brightness if needed */
 }
 
 /* Text Styles */
@@ -74,7 +74,7 @@
   &-date {
     color: #E4E4DE;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: bold 700;
   }
 
   &-desc,
