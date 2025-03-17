@@ -2,6 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -16,6 +17,12 @@
     "sass": "^1.85.1",
     "sass-loader": "^16.0.5",
     "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.13",
+    "@svgr/webpack": "^8.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -40,8 +47,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@svgr/webpack": "^8.1.0"
   }
 }
