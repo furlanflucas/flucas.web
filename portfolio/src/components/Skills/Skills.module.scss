@@ -51,11 +51,11 @@
 .skillBadge {
   display: flex;
   align-items: center;
-  gap: 15px; /* Reduced to make badges more compact */
+  gap: 10px; /* Keeps icon and text close */
   background-color: #595f39;
   color: #E4E4DE;
-  padding: 8px 14px; /* Reduced padding */
-  border-radius: 8px; /* Slightly smaller */
+  padding: 8px 14px;
+  border-radius: 8px;
   font-weight: bold;
   font-size: 1rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -64,6 +64,13 @@
 
 .skillBadge:hover {
   transform: scale(1.1);
+}
+
+/* 🔹 Skill Icon (Ensures All Icons Are the Same Size) */
+.skillIcon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
 
 /* 🔹 Responsive Design */
