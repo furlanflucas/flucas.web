@@ -10,9 +10,9 @@ const projects = [
     link: "https://github.com/furlanflucas/flucas.io/tree/main/data_engineering/geospatial_data_quality_pipeline" 
   },
   { 
-    title: "Cloud Data Warehouse for Music Analytics", 
-    description: "Built a scalable data warehouse for structured music analytics using AWS Redshift.",
-    link: "https://github.com/furlanflucas/flucas.io/tree/main/data_engineering/cloud_data_warehouse_for_music_analytics" 
+    title: "Airflow & Redshift Data Pipeline", 
+    description: "ETL pipeline using Apache Airflow and AWS Redshift, designed to ingest, transform, and validate log data from S3.",
+    link: "https://github.com/furlanflucas/flucas.io/tree/main/data_engineering/data-pipelines-with-airflow" 
   },
   { 
     title: "Real-Time Data Pipeline", 
